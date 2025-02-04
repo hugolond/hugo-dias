@@ -24,11 +24,7 @@ const newsletter = {
 const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/hugolond",
-  },
+  
   {
     name: "LinkedIn",
     icon: "linkedin",
@@ -37,7 +33,7 @@ const social = [
   {
     name: "WhatsApp",
     icon: "whatsapp",
-    link: "s",
+    link: "https://wa.me/551340424748",
   },
   {
     name: "E-mail",
@@ -47,14 +43,19 @@ const social = [
   {
     name: "PDF",
     icon: "pdf",
-    link: "mailto:hugolond@gmail.com",
+    link: "https://www.hugodias.tech/static/media/profile.pdf",
+  },
+  {
+    name: "GitHub",
+    icon: "github",
+    link: "https://github.com/hugolond",
   },
 ];
 
 const home = {
   label: "Home",
   title: `${person.name}`,
-  description: `Website para apresentações dos projetos de ${person.role}`,
+  description: `Website para apresentação de projetos realizados de ${person.role}`,
   headline: <>Hugo Dias</>,
   subline: (
     <>
@@ -94,17 +95,15 @@ const about = {
     title: "Experiencias Profissionais",
     experiences: [
       {
-        company: "Pernambucanas",
+        company: "Pernambucanas - São Paulo",
         timeframe: "Jan/2023 - Atual",
         role: "Tech Leader",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Líder técnico para as áreas de Ecommerce e suas integrações, CRM, aplicações RFID e IA.  
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Atuação em novos projetos de varejo para as áreas com foco em rentabilidade e perfarmace. 
           </>,
         ],
         images: [
@@ -112,52 +111,76 @@ const about = {
         ],
       },
       {
-        company: "Pernambucanas",
+        company: "Pernambucanas - São Paulo",
         timeframe: "Out/2021 - Jan/2023",
         role: "Head Tecnologia - Ecommerce/Varejo",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Implantação/Acompanhamento técnico de novos projetos e das operações do ecommerce, garantindo a melhor estratégia visando otimizações e reduções de custos. 
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Responsável técnico dos canais digitais de venda (APP e Site). Acompanhamento das vendas, acesso site, integrações, politicas de entrega e sellers.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
+          
         ],
       },
       {
-        company: "Connect Parts",
+        company: "Connect Parts - Marília",
         timeframe: "Mai/2020 - Out/2021",
-        role: "Gerente de Desenvolvimento",
+        role: "Gerente de Desenvolvimento/Gestor Marketing",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Responsável pelo time de desenvolvimento Front/End e Back-end. Com atribuição de manter o fluxo operacional do ecommerce. 
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Elaborar estrátegias e realizar a gestão dos investimentos de Marketing (mídia on-line). 
           </>,
         ],
         images: [],
       },
       {
-        company: "Conect Parts",
-        timeframe: "Mai/2020 - Out/2021",
-        role: "Gerente de Desenvolvimento",
+        company: "UNOPAR - Univ. Norte do Paraná - Londrina/PR",
+        timeframe: "Jan/2016 - Ago/2018",
+        role: "Professor de Pós Graduação",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
+            Docente do curso de Pós Graduação em Automação Industrial e Sistemas Inteligentes.
+          </>
+        ],
+        images: [],
+      },
+      {
+        company: "UNOPAR - Univ. Norte do Paraná - Londrina/PR",
+        timeframe: "Jun/2013 - Ago/2018",
+        role: "Coordenador de Curso Superior",
+        achievements: [
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+            Eng. da Computação, Eng. Elétrica e CST em Análise e Desenvolvimento de Sistemas.
+          </>
+        ],
+        images: [],
+      },
+      {
+        company: "UNOPAR - Univ. Norte do Paraná - Londrina/PR",
+        timeframe: "Fev/2013 - Ago/2018",
+        role: "Professor de Ensino Superior",
+        achievements: [
+          <>
+            Docente das disciplinas de Microcontroladores, Modelagem Matemática, Automação Industrial, Sistemas Inteligentes, Instrumentação entre outras.
+          </>
+        ],
+        images: [],
+      },
+      {
+        company: "UTFPR - Univ. Tecnológica Federal do Paraná - Cornélio Procópio/PR",
+        timeframe: "Jan/2011 - Abr/2012",
+        role: "Bolsista/Pesquisador CAPES",
+        achievements: [
+          <>
+            Estudante de Mestrados na UTFPR - Campus Cornélio Procópio e bolsista CAPES em tempo integral.
+          </>
         ],
         images: [],
       },
@@ -168,22 +191,26 @@ const about = {
     title: "Formações Acadêmicas",
     institutions: [
       {
-        name: "UTFPR - Universidade Federal Tecn. do Paraná",
-        description: <>Mestrado em Engenharia Elétrica - 2023</>,
+        name: "UTFPR - Universidade Tecnológica Federal do Paraná",
+        description: <>Mestrado em Engenharia Elétrica, Engenharia Elétrica · (2011 - 2013)</>,
       },
       {
-        name: "UTFPR - Universidade Federal Tecn. do Paraná",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "UTFPR - Universidade Tecnológica Federal do Paraná",
+        description: <>Especialização, Automação e Controle de Processos Industriais (2010 - 2011)</>,
+      },
+      {
+        name: "UNOPAR - Universidade Norte do Paraná",
+        description: <>Engenheiro, Engenharia da Computação (2005 - 2009)</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
         title: "Linguagens de Programação",
-        description: <>JavaScript (Node.js, React, Angular, Vue.js ,),Java, Go (GoLang), TypeScript, C#. </>,
+        description: <>JavaScript (Node.js, React, Angular, Vue.js), Java, Go (GoLang), TypeScript, C#. </>,
         images: [
         ],
       },
