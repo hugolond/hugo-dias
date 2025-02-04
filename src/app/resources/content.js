@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Software Engineer",
-  avatar: "/images/avatar.png",
+  avatar: "/images/avatar.jpg",
   location: "Brasil/São Paulo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Inglês", "Espanhol"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -53,8 +53,8 @@ const social = [
 
 const home = {
   label: "Home",
-  title: `Página de ${person.name}`,
-  description: `Website para apresentação dos projetos de ${person.role}`,
+  title: `${person.name}`,
+  description: `Website para apresentações dos projetos de ${person.role}`,
   headline: <>Hugo Dias</>,
   subline: (
     <>
