@@ -28,7 +28,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "www.linkedin.com/in/hugoviniciusdias",
+    link: "https://www.linkedin.com/in/hugoviniciusdias",
   },
   {
     name: "WhatsApp",
@@ -251,7 +251,7 @@ const about = {
         ],
       },
       {
-        title: "Gestão ",
+        title: "Plataformas",
         description: <>Vtex, Salesforce, Google Analitcs (GA4).  </>,
         images: [
         ],
