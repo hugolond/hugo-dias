@@ -8,6 +8,9 @@ import { home, about, person} from "@/app/resources/content";
 import { Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
 
+import { useAnalytics } from '../hooks/useAnalytics';
+
+
 export async function generateMetadata() {
   const title = home.title;
   const description = home.description;
@@ -38,6 +41,7 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
+  useAnalytics();
   return (
     <Column maxWidth="m" gap="xl" horizontal="center">
       <script

@@ -12,6 +12,10 @@ import { Source_Code_Pro } from "next/font/google";
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
 
+import { AnalyticsWrapper } from '@/components/AnalyticsWrapper';
+import Script from "next/script";
+import { Suspense } from "react";
+
 export async function generateMetadata() {
   return {
     metadataBase: new URL(`https://${baseURL}`),
@@ -140,7 +144,24 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             }}
           />
           <Flex fillWidth minHeight="16"></Flex>
+          {/* Google Analytics scripts */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-7EH1L718ST`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7EH1L718ST');
+          `}
+        </Script>
+          
           <Header />
+          <Suspense fallback={null}>
+          <AnalyticsWrapper />
+        </Suspense>
           <Flex
             position="relative"
             zIndex={0}
