@@ -84,8 +84,8 @@ const about = {
     title: "Introdução",
     description: (
       <>
-        Profissional com sólida experiência na área de tecnologia, atuando como Engenharia de Software e Desenvolvedor Full Stack. 
-        Com um perfil dinâmico e proativo, possuo ampla expertise no desenvolvimento de soluções tecnológicas inovadoras, desde a concepção até a implementação, garantindo alta performance e escalabilidade. 
+        Profissional com sólida experiência na área de tecnologia, atuando como Engenheiro de Software e Desenvolvedor Full Stack. 
+        Com um perfil dinâmico e proativo, possuindo ampla expertise no desenvolvimento de soluções tecnológicas inovadoras, desde a concepção até a implementação, garantindo alta performance e escalabilidade. 
         Seu perfil é marcado pela capacidade de resolver problemas complexos, aliando conhecimentos técnicos avançados a uma visão estratégica de negócios.
       </>
     ),
@@ -100,10 +100,10 @@ const about = {
         role: "Tech Leader",
         achievements: [
           <>
-            Líder técnico para as áreas de Ecommerce e suas integrações, CRM, aplicações RFID e IA.  
+            Líder técnico para as áreas de E-commerce e suas integrações, CRM, aplicações RFID e IA.  
           </>,
           <>
-            Atuação em novos projetos de varejo para as áreas com foco em rentabilidade e perfarmace. 
+            Atuação em novos projetos de varejo para as áreas com foco em rentabilidade e peformance. 
           </>,
         ],
         images: [
@@ -113,10 +113,10 @@ const about = {
       {
         company: "Pernambucanas - São Paulo",
         timeframe: "Out/2021 - Jan/2023",
-        role: "Head Tecnologia - Ecommerce/Varejo",
+        role: "Head Tecnologia - E-commerce/Varejo",
         achievements: [
           <>
-            Implantação/Acompanhamento técnico de novos projetos e das operações do ecommerce, garantindo a melhor estratégia visando otimizações e reduções de custos. 
+            Implantação/Acompanhamento técnico de novos projetos e das operações do e-commerce, garantindo a melhor estratégia visando otimizações e reduções de custos. 
           </>,
           <>
             Responsável técnico dos canais digitais de venda (APP e Site). Acompanhamento das vendas, acesso site, integrações, politicas de entrega e sellers.
@@ -132,7 +132,7 @@ const about = {
         role: "Gerente de Desenvolvimento/Gestor Marketing",
         achievements: [
           <>
-            Responsável pelo time de desenvolvimento Front/End e Back-end. Com atribuição de manter o fluxo operacional do ecommerce. 
+            Responsável pelo time de desenvolvimento Front-end e Back-end. Com atribuição de manter o fluxo operacional do e-commerce. 
           </>,
           <>
             Elaborar estrátegias e realizar a gestão dos investimentos de Marketing (mídia on-line). 
@@ -179,7 +179,7 @@ const about = {
         role: "Bolsista/Pesquisador CAPES",
         achievements: [
           <>
-            Estudante de Mestrados na UTFPR - Campus Cornélio Procópio e bolsista CAPES em tempo integral.
+            Estudante de Mestrado na UTFPR - Campus Cornélio Procópio e bolsista CAPES em tempo integral.
           </>
         ],
         images: [],

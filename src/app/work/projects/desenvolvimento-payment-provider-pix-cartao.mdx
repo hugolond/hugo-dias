@@ -1,7 +1,7 @@
 ---
 title: "Desenvolvimento Payment Provider VTEX Cartões White-Label e PIX"
 publishedAt: "2022-04-01"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+summary: "Conectado a VTEX, foi criado uma aplicação intermediária para cadenciar as interações entre checkout e as formas de pagamento exclusivas (cartão e PIX)"
 team:
   - name: "Hugo Dias"
     role: "Software Engineer"
@@ -15,31 +15,24 @@ team:
     role: "Loja"
     avatar: "/images/logo/vtex_logo.png"
     linkedIn: ""
-link: "https://www.pernambucanas.com.br/"
 ---
 
 ## Contexto
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
-
+O objetivo foi garantir aos clientes da Pernambucanas a possibilidade de utilizar os cartões de crédito da marca no checkout do site e do aplicativo, proporcionando uma experiência de pagamento simples, segura e eficiente.
 ## Objetivos
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Confiabilidade nas informações**: Devido à comunicação entre aplicações com dados sensíveis, foi necessário aplicar técnicas como idempotência e uso de filas de processamento..
+- **Velocidade nas transações**: O tempo de resposta das transações de pagamento é crucial para oferecer uma boa experiência no processo de checkout.
+- **Multiplataforma**: Garantir ao cliente uma experiência de compra consistente em todas as plataformas (site, app, etc.)..
+- **Auditoria e Seguraça**: Fornecimento de dados internos para auditoria, permitindo a conciliação de pagamentos e transações de forma segura e rastreáve. 
 
-## Technologies Used
+## Tecnologias Utilizadas
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **Java**: Utilizado para a aplicação que interage com a VTEX, garantindo a comunicação via API com o gateway de pagamento..
+- **Redis**:  Empregado para assegurar agilidade e confiabilidade nas transações.
+- **GraphQl**: Aplicado para otimizar a velocidade e eficiência nas consultas via API.
 
-## Challenges and Learnings
+## Desafios e Aprendizados
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
-
-## Outcome
-
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+O tempo de processamento e a resistência a grandes volumes de dados foram desafios importantes, devido à necessidade de orquestração simultânea de múltiplas requisições. A escalabilidade do cluster e a parametrização do Java para extrair o máximo desempenho exigiram estudos e testes aprofundados. Além disso, a conciliação das transações aprovadas, com a criação de chaves de identificação únicas, também demandou validações específicas.
