@@ -103,7 +103,7 @@ const about = {
             Líder técnico para as áreas de E-commerce e suas integrações, CRM, aplicações RFID e IA.  
           </>,
           <>
-            Atuação em novos projetos de varejo para as áreas com foco em rentabilidade e peformance. 
+            Atuação em novos projetos de varejo para as áreas com foco em rentabilidade e performance. 
           </>,
         ],
         images: [
@@ -135,7 +135,7 @@ const about = {
             Responsável pelo time de desenvolvimento Front-end e Back-end. Com atribuição de manter o fluxo operacional do e-commerce. 
           </>,
           <>
-            Elaborar estrátegias e realizar a gestão dos investimentos de Marketing (mídia on-line). 
+            Elaborar estrategias e realizar a gestão dos investimentos de Marketing (mídia on-line). 
           </>,
         ],
         images: [],
@@ -227,7 +227,7 @@ const about = {
         ],
       },
       {
-        title: "Apoio Desenv./Dashboard/Versionamento/Validação Codigo",
+        title: "Apoio Desenv./Dashboard/Versionamento/Validação Código",
         description: <> Docker, Kubernetes, Argo, DataDog, PowerBI, SuperSet, Grafana, Git, GitHub, Bitbucket, SonarQube.</>,
         images: [
         ],
@@ -252,7 +252,7 @@ const about = {
       },
       {
         title: "Plataformas",
-        description: <>Vtex, Salesforce, Google Analitcs (GA4).  </>,
+        description: <>Vtex, Salesforce, Google Analytics (GA4).  </>,
         images: [
         ],
       },
